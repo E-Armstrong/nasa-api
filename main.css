@@ -1,3 +1,37 @@
 #main-container {
     position: relative;
 }
+
+.asteroid {
+    position: relative;
+    display: inline-block;
+    border: 2px solid black;
+    width: 950px;
+    height: 150px;
+    overflow: hidden;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.diameter {
+    position: absolute;
+}
+
+.approach_date {
+    position: absolute;
+}
+
+.speed {
+    position: absolute;
+}
+
+.orbiting_body {
+    position: absolute;
+}
+
+.miss_distance {
+    position: absolute;
+}
