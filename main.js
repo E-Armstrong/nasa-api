@@ -35,7 +35,7 @@ $(document).ready(function(){
             <div class="speed">Speed: ${dangerousAsteroids[i].close_approach_data[0].relative_velocity.miles_per_hour} Miles Per Hour</div>
             <div class="orbiting_body">Orbiting Body: ${dangerousAsteroids[i].close_approach_data[0].orbiting_body}</div>
             <div class="miss_distance">Diameter: ${dangerousAsteroids[i].close_approach_data[0].miss_distance.miles} miles</div>
-            </div>)
+            </div>
             `)
         }
     })
