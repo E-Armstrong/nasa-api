@@ -30,9 +30,9 @@ $(document).ready(function () {
 
         javascriptNestedInjQuery(data)
         for (var i = 0; i < dangerousAsteroids.length; i++) {
-
+            //this block of code assigns each asteroid and all of it's attributes to a separate div
             $('#main-container').append(`
-            <div class="asteroid"> //this block of code assigns each asteroid and all of it's attributes to a separate div
+            <div class="asteroid"> 
             <img src="http://www.daily-sun.com/assets/news_images/2017/06/29/asteroids-humanity-daily-sun.jpg">
             <div class="name">Name: ${dangerousAsteroids[i].name}</div>
             <div class="diameter">Diameter: ${dangerousAsteroids[i].estimated_diameter.miles.estimated_diameter_max} miles</div>
