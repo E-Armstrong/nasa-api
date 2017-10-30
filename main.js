@@ -23,6 +23,11 @@ $(document).ready(function(){
                 }
             }
         }
+
+        dangerousAsteroids.sort(function(a, b) {
+            return a.close_approach_data[0].miss_distance.miles - b.close_approach_data[0].miss_distance.miles;
+          });
+
         javascriptNestedInjQuery(data)   
         for (var i =0; i < dangerousAsteroids.length; i++) {
             
@@ -34,7 +39,7 @@ $(document).ready(function(){
             <div class="approach_date">Approach Date: ${dangerousAsteroids[i].close_approach_data[0].close_approach_date}</div>
             <div class="speed">Speed: ${dangerousAsteroids[i].close_approach_data[0].relative_velocity.miles_per_hour} Miles Per Hour</div>
             <div class="orbiting_body">Orbiting Body: ${dangerousAsteroids[i].close_approach_data[0].orbiting_body}</div>
-            <div class="miss_distance">Diameter: ${dangerousAsteroids[i].close_approach_data[0].miss_distance.miles} miles</div>
+            <div class="miss_distance">Miss Distance: ${dangerousAsteroids[i].close_approach_data[0].miss_distance.miles} miles</div>
             </div>
             `)
         }
